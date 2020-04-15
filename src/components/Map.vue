@@ -1,21 +1,38 @@
 <template>
-    
+    <div ref="mymap" class="mymap">
+
+    </div>
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import { Map, LngLatBounds, LngLat, Popup, NavigationControl } from 'mapbox-gl'
-
+import { Map
+//, LngLatBounds, LngLat, Popup, NavigationControl 
+} from 'mapbox-gl'
+import style from './resources/mapboxstyle'
 
 export default Vue.extend({
     data: () => ({
         map: {} as Map
     }),
-    
+    mounted() {
+        const map = this.map = new Map({
+            container: this.$refs.mymap as HTMLElement,
+            style
+        })
+
+        map.on('load', ()=>{
+            console.log('loaded!')
+        })
+    }
 
 })
 </script>
-<style>
-@import '../../node_modules/mapbox-gl/dist/mapbox-gl.css'
+<style lang="scss" scoped>
+@import '../../node_modules/mapbox-gl/dist/mapbox-gl.css';
 
+.mymap{
+    width: 100%;
+    height: 100%;
+}
 
 </style>

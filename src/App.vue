@@ -2,10 +2,10 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="secondary"
       dark
     >
-      <div class="d-flex align-center">
+      <!-- <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -23,8 +23,11 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
+      </div> -->
+      <div class="d-flex align center">
+          <v-btn color="success"><router-link name="Home" to="/">Home</router-link></v-btn>
+          <v-btn color="success"><router-link name="Map" to="/map">Map</router-link></v-btn>
       </div>
-
       <v-spacer></v-spacer>
 
       <v-btn
