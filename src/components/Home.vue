@@ -18,7 +18,7 @@ import Vue from 'vue'
 export default Vue.extend({
     data: ()=>({
         name: "Jason",
-        aboutme
+        // aboutme
     })
 })
 </script>
