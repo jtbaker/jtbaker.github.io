@@ -10,6 +10,5 @@ module.exports = {
   //     .loader("raw-loader")
   //     .end();
   // },
-  outputDir: path.resolve(__dirname),
-  assetsDir: "dist",
+  publicPath: ["/jtbaker.github.io/"]
 };
