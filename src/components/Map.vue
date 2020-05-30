@@ -1,5 +1,5 @@
 <template>
-    <div ref="mymap" class="mymap">
+    <div ref="mymap" class="mymap fill-height">
 
     </div>
 </template>
@@ -31,8 +31,10 @@ export default Vue.extend({
 @import '../../node_modules/mapbox-gl/dist/mapbox-gl.css';
 
 .mymap{
-    width: 100%;
-    height: 100%;
+    // display: flex;
+    // flex-grow: inherit;
+    // width: 100%;
+    // height: 100%;
 }
 
 </style>
