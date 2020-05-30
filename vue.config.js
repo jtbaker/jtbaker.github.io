@@ -10,5 +10,5 @@ module.exports = {
   //     .loader("raw-loader")
   //     .end();
   // },
-  publicPath: "jtbaker.github.io"
+  publicPath: ""
 };

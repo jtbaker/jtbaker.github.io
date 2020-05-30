@@ -18,6 +18,15 @@ export default Vue.extend({
         const map = this.map = new Map({
             container: this.$refs.mymap as HTMLElement,
             style
+            // transformRequest: function(url, resourceType){
+            //     console.log(resourceType)
+            //     return {
+            //         url: url,
+            //         // headers: {
+            //         //     // "a"
+            //         // }
+            //     }
+            // }
         })
 
         map.on('load', ()=>{
