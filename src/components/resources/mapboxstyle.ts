@@ -9,8 +9,8 @@ export default {
             type: "raster",
             tileSize: 256,
             tiles: [
-                "http://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
-                "http://b.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+                "https://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+                "https://b.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
             ]
         }
     },
