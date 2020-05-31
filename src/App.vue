@@ -7,11 +7,25 @@
         <span class="font-bold text-2xl">Jason Baker</span>
       </div>
       <div class="w-full-block block sm:flex sm:flex-grow sm:justify-end">
-          <router-link class="nav-link" v-for="link in nav" :key="link" :to="`/${link}`" :id="link">
-            <div :class="['nav-btn', `/${link}`=== activeRoute ? 'activeroute':null]" >
-              <span>{{ capitalize(link) }}</span>
-            </div>
-          </router-link>
+        <router-link
+          class="nav-link"
+          v-for="link in nav"
+          :key="link"
+          :to="`/${link}`"
+          :id="link"
+        >
+          <div
+            :class="[
+              'nav-btn',
+              `/${link}` === activeRoute ? 'activeroute' : null,
+            ]"
+          >
+            <span>{{ capitalize(link) }}</span>
+          </div>
+        </router-link>
+        <a class="nav-link" href="/blog">
+          <div class="nav-btn"><span>Blog</span></div>
+        </a>
         <!-- <a v-for="link in nav" :key="link" :href="`#${link}`" class="text-teal-200 hover:text-white">
           <div :id="link" class="nav-btn">
             <span>{{capitalize(link)}}</span>
@@ -86,7 +100,7 @@ export default Vue.extend({
     capitalize,
   },
   data: () => ({
-    nav: ["home", "blog", "resume", "map"],
+    nav: ["home", "resume", "map"],
   }),
   computed: {
     activeRoute: function(): string {
