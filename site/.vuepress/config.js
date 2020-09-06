@@ -1,6 +1,6 @@
 module.exports = {
   title: "Jason Baker",
-  theme: "@vuepress/blog",
+  theme: "@vuepress/theme-blog",
   outDir: "../dist/",
   themeConfig: {
     nav: [{

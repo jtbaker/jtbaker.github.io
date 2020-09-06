@@ -11,15 +11,15 @@
   },
   "dependencies": {
     "@types/d3": "^5.7.2",
-    "@types/mapbox-gl": "^1.10.4",
-    "@vuepress/theme-blog": "^2.2.0",
+    "@types/mapbox-gl": "^1.11.2",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "d3": "^4.13.0",
     "esm": "^3.2.25",
-    "mapbox-gl": "^1.11.0",
+    "mapbox-gl": "^1.12.0",
     "marked": "^1.1.0",
     "tailwindcss": "^1.4.6",
+    "ts-loader": "^8.0.3",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4",
     "vuetify": "^2.3.1"
@@ -32,6 +32,7 @@
     "@vue/cli-plugin-typescript": "^4.4.4",
     "@vue/cli-service": "^4.4.4",
     "@vue/eslint-config-typescript": "^5.0.1",
+    "@vuepress/theme-blog": "^2.3.2",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
@@ -41,10 +42,11 @@
     "sass-loader": "^8.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "typescript": "~3.8.3",
+    "typescript": "^3.9.7",
     "vue-cli-plugin-vuetify": "^2.0.5",
     "vue-template-compiler": "^2.6.11",
-    "vuepress": "^1.5.2",
+    "vuepress": "^1.5.4",
+    "vuepress-plugin-typescript": "^0.3.1",
     "vuetify-loader": "^1.5.0"
   },
   "eslintConfig": {
@@ -65,5 +67,12 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "resolutions": {
+    "vuepress/**/@babel/preset-stage-2": "7.0.0",
+    "vuepress/**/@babel/core": "7.4.4",
+    "vuepress/**/@babel/runtime": "7.4.4",
+    "vuepress/**/babel-loader": "8.0.6",
+    "vuepress/**/@vue/babel-preset-app": "3.3.0"
+  }
 }

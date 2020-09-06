@@ -68,7 +68,7 @@ export default {
       text-transform capitalize
       font-family PT Serif, Serif
       color #222
-      font-weight bold
+      font-weight normal
 .mobile-nav-item
   padding 10px 0
   list-style none
