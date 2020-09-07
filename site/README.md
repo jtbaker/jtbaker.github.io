@@ -2,4 +2,4 @@
 home: false
 ---
 
-Hi My name is Jason
+Hi, welcome to my page.
