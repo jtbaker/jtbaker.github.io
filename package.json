@@ -22,7 +22,7 @@
     "ts-loader": "^8.0.3",
     "vue": "^2.6.12",
     "vue-router": "^3.3.4",
-    "vuetify": "^2.3.1"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
